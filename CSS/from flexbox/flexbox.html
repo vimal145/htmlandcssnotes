@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+<style>
+    .container{
+        height: 600px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+
+        /* flex property for flex container  */
+
+        /* flex-direction: row;  row is the default property of flex-direction */
+        /* flex-direction: row;
+        flex-direction: column;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse; */
+  
+        /* flex-wrap has default value of no warp  */
+        /* flex-wrap: wrap;
+        flex-wrap: wrap-reverse; */
+
+        /* flex-flow: we can add flex direction and flex wrap property both in flex-flow */
+        /* flex-flow: column wrap; */
+
+        /* justify-content will justify the content in horizontal direction */
+        /* justify-content: center;
+        justify-content: space-between;
+        justify-content: space-evenly;
+        justify-content: space-around; */
+
+        /* align-items will align the item in vertical direction  */
+        /* align-items: center;
+        align-items: flex-end;
+        align-items: flex-start;
+        align-items: stretch; */
+
+        /* align-content: center  */
+        
+    }
+    .item{
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+
+        #item1{
+            /* flex property for flex item  */
+
+            /* higher the order, later it will show in the container  */
+            /* order: 5; */
+
+            flex-grow: 3;
+        }
+        #item2{
+            /* order: 4; */
+            flex-grow: 2   ;
+        }
+        #item3{
+            /* order: 2  ; */
+        }
+    
+</style>
+<body>
+    <h1>Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1"><p>first box</p></div>
+        <div class="item" id="item2"><p>second box</p></div>
+        <div class="item" id="item3"><p>third box</p></div>
+        <!-- <div class="item" id="item4"><p>forth box</p></div>
+        <div class="item" id="item5"><p>fifth box</p></div>
+        <div class="item" id="item6"><p>sixth box</p></div> -->
+    </div>
+</body>
+</html>
